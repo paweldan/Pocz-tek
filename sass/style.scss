@@ -1,0 +1,187 @@
+/* Global */
+
+$color-main: #ecf0f1;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    color: #3d3d3d;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 108px 0;
+}
+
+.section-title {
+    position: relative;
+    font-size: 36px;
+    margin: 0 0 60px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    transform: translateX(-50%);
+    background: black;
+}
+
+/* Splash */
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://i.postimg.cc/PxkVsrPS/pexels-addie-davis-7105980.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.splash i {
+    font-size: 30px;
+    background: $color-main;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: black;
+    border-radius: 50%;
+}
+
+.page-title {
+    color: black;
+    font-size: 40px;
+    margin: 48px 0 0 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    transform: translateX(-50%);
+    background: black;
+}
+
+.page-subtitle {
+    margin: 48px 0 0 0;
+    font-size: 20px;
+    color: black;
+}
+
+/* Intro */
+
+.intro {
+    background: #fff;
+}
+
+.intro p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px 0;
+    font-size: 20px;
+    border-top: 1px solid #3d3d3d;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+/* About */
+
+.about {
+    background: #f0f0f0;
+}
+
+/* Skills */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    position: relative;
+}
+
+.skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.skill.right .skill-image {
+    right: 0;
+}
+
+.skill.right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;
+}
+
+.skill.left .skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;
+}
+
+.skill-image img:hover {
+    transform: scale(2);
+}
+
+
+.page-footer {
+    font-size: 9px;
+    color: white;
+    background: #242424;
+}
+
+/* Gallery */
+
+.row::before,
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.row li {
+    float: left;
+    width: 33.3333%;
+    height: 300px;
+    position: relative;
+}
